@@ -1,0 +1,133 @@
+html {
+  --text-clr:#403868;
+  --primary-clr:#807FFE;
+  --text-input-background-color:#ececec;
+  height: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: nunito;
+  color: var(--text-clr);
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section {
+  border: 1px solid #6969ff81;
+  border-radius: 3px;
+  padding: 20px;
+  width: 350px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section .login-text h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+main section form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section form input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+main section form input[type="text"] {
+  margin-top: 10px;
+  background: var(--text-input-background-color);
+  color: #403868;
+  font-weight: 600;
+}
+
+main section form input[type="text"]:focus {
+  background-color: #dedede;
+}
+
+main section form .user-pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section form > * {
+  margin-top: 10px;
+}
+
+main section form input[type="submit"] {
+  margin-top: 30px;
+  background-color: var(--primary-clr);
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+main section form input[type="submit"]:hover {
+  background: #7373ff;
+}
+
+main section form div:nth-child(2) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=main.css.map */
